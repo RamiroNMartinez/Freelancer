@@ -16,16 +16,15 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo">Ramiro Martínez <span>Freelancer</span></h1>
+        <h1 id="titulo" class="titulo">Ramiro Martínez <span>Freelancer</span></h1>
     </header>
 
     <!--    Esto es un comentario -->
 
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre Mi</a>
-            <a href="#">Clientes</a>
+            <a href="index.html">Inicio</a>
+            <a href="CV Ramiro Martinez.pdf">Sobre Mi</a>
             <a href="#nombre">Contacto</a>
         </nav>
     </div>
@@ -69,7 +68,9 @@
                         <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
                     </svg>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sapiente eveniet</p>
+                <p>
+                    Soy estudiante en curso de desarrollo web full stack y programador de aplicaciones.
+                </p>
             </section>
             
             <section class="servicio">
@@ -91,7 +92,9 @@
                         <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
                     </svg>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sapiente eveniet</p>
+                <p>
+                    Si bien no he desarrollado ninguna app web todavía, próximamente buscaré unirme al desarrollo de una colaborativa.
+                </p>
             </section>
 
             <section class="servicio">
@@ -105,7 +108,9 @@
                         <line x1="11" y1="15" x2="13" y2="15" />
                     </svg>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sapiente eveniet</p>
+                <p>
+                    Al igual que con las apps, no he desarrollado ninguna página de e-commerce funcional todavía. 
+                </p>
             </section>
 
         </div> <!-- Cierre de clase "servicios"-->
@@ -114,29 +119,34 @@
         <section>   
             <h2>Contacto</h2>
 
-            <form class="formulario">
+            <form action="https://formsubmit.co/ramiro.nicolas.martinez14@gmail.com" method="POST" class="formulario">
                 <fieldset>
                     <legend>Contáctame llenando todos los campos</legend>
                     <div class="contenedor-campos">
                         <div class="campo">
-                            <label>Nombre</label>
-                            <input id="nombre" class="input-text" type="text" placeholder="Nombre" required>
+                            <label>Nombre / Name</label>
+                            <input id="nombre" class="input-text" type="text"
+                            name="name" 
+                            placeholder="Nombre/Name" required>
                         </div>
 
                         <div class="campo">
-                            <label>Teléfono</label>
-                            <input id="telefono" class="input-text" type="tel" placeholder="Tu Teléfono" required> 
+                            <label>Asunto / Email Subject</label>
+                            <input id="asunto" class="input-text" type="text" 
+                            name="subject"
+                            placeholder="Asunto/Subject" required> 
                         </div>
 
 
                         <div class="campo">
-                            <label>Correo</label>
-                            <input id="email" class="input-text" type="email" placeholder="Tu Email" required>
+                            <label>Correo / Email</label>
+                            <input id="email" class="input-text" type="email"
+                            name="email" placeholder="Email" required>
                         </div>
 
                         <div class="campo">
-                            <label>Mensaje</label>
-                            <textarea id="mensaje" required></textarea>
+                            <label>Mensaje / Message</label>
+                            <textarea name="message" id="mensaje" required></textarea>
                         </div>
                     </div> <!-- .contenedor-campos -->
 
@@ -151,7 +161,7 @@
     </main>
 
     <footer class="footer">
-        <p>Todos los derechos reservados. Ramiro Martínez Freelancer</p>
+        <p>Ramiro Martínez Freelancer</p>
     </footer>
 
 
